@@ -6,5 +6,6 @@ Using AWS & ReactJS.
 
 ## Tech used
 
+Brew
 Git and github
 SSH

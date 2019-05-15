@@ -48,3 +48,9 @@ describe("ExampleWorkBubble component", () => {
     expect(images.prop('src')).toEqual(myWork[0].image.src);
   });
 });
+
+describe("Failing test", () => {
+  it("Should fail", () => {
+    expect(5).toEqual(6);
+  });
+});

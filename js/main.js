@@ -1,5 +1,26 @@
-import 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log("Added react-dom");
+import ExampleWork from './example-work';
 
-console.log("Webpack is running");
+const myWork = [
+  {
+    "title": "Work Example",
+    "image": {
+      "description": "example screenshot of a project involving code",
+      "src": "images/example1.png",
+      "comment": ""
+    }
+  },
+  {
+    "title": "Work Example",
+    "image": {
+      "description": "example screenshot of a project involving chemistry",
+      "src": "images/example2.png",
+      "comment": `“Chemistry” by Surian Soosay is licensed under CC BY 2.0
+                  https://www.flickr.com/photos/ssoosay/4097410999`
+    }
+  }
+];
+
+ReactDOM.render(<ExampleWork work={myWork} />, document.getElementById("example-work"));
